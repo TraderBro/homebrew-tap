@@ -5,21 +5,21 @@
 class Traderbro < Formula
   desc "Query analyst predictions and research from TraderBro"
   homepage "https://traderbro.ai"
-  version "1.0.0"
+  version "1.0.1"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TraderBro/traderbro-cli-binary/releases/download/v1.0.0/traderbro_darwin_amd64.tar.gz"
-      sha256 "a1539cd7651fc175d5f0713e9a646a2422e150d4236521172d094b364ca1ba9a"
+      url "https://github.com/TraderBro/traderbro-cli-binary/releases/download/v1.0.1/traderbro_darwin_amd64.tar.gz"
+      sha256 "881f1e7edc3babded208b8a89c60fb920c3830ce51a82ec68a8e64cff46c319b"
 
       define_method(:install) do
         bin.install "traderbro"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TraderBro/traderbro-cli-binary/releases/download/v1.0.0/traderbro_darwin_arm64.tar.gz"
-      sha256 "7ab85680dd18aadabb78dcc692083477efc7a2518bfb105ced4ae77656274704"
+      url "https://github.com/TraderBro/traderbro-cli-binary/releases/download/v1.0.1/traderbro_darwin_arm64.tar.gz"
+      sha256 "49f7e53883ade9f702adcce0f77513c667f2affffea08b01cb8dda639aacd215"
 
       define_method(:install) do
         bin.install "traderbro"
@@ -29,15 +29,15 @@ class Traderbro < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TraderBro/traderbro-cli-binary/releases/download/v1.0.0/traderbro_linux_amd64.tar.gz"
-      sha256 "80ed4d8cdea8c01303357a398452faf0ddc1c0261e53ead2a152aa343a1d3c61"
+      url "https://github.com/TraderBro/traderbro-cli-binary/releases/download/v1.0.1/traderbro_linux_amd64.tar.gz"
+      sha256 "3d78726bd4177b99e857f27df3b6bd5f334a8aabd54bfced7d2190b499eeb717"
       define_method(:install) do
         bin.install "traderbro"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TraderBro/traderbro-cli-binary/releases/download/v1.0.0/traderbro_linux_arm64.tar.gz"
-      sha256 "743b24e9f2a50f258440f66f9fe78a91175098d30bf0868a17c121f1875f1e5d"
+      url "https://github.com/TraderBro/traderbro-cli-binary/releases/download/v1.0.1/traderbro_linux_arm64.tar.gz"
+      sha256 "5ad5d1e69a21a542d68005e8771cf890a47b27e2b8210395af930062966dff2b"
       define_method(:install) do
         bin.install "traderbro"
       end
